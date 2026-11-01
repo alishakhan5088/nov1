@@ -4,3 +4,13 @@ on:
 jobs:
   myjob1:
     runs-on: ubuntu-latest
+    steps:
+      - name: mystep1
+        run: |
+          whoami
+          pwd
+          cat /etc/os-release
+          cd
+          ls -al
+          docker --version
+          docker compose version
