@@ -32,5 +32,5 @@ jobs:
       - name: mystep7-push the docker image
         run: docker image push alishakhannnnnnnnn03/myimage_nov1:t${{ github.run_number }}
       - name: mystep8
-        run: sshpass -p 'Anil@332211' ssh -o StrictHostKeyChecking=accept-new root@164.68.105.85 'ls -al' docker run -dit -p 7000:80 alishakhannnnnnnnn03/myimage_nov1:t${{ github.run_number }}
+        run: sshpass -p 'Anil@332211' ssh -o StrictHostKeyChecking=accept-new root@164.68.105.85 'docker run -dit -p 7000:80 alishakhannnnnnnnn03/myimage_nov1:t${{ github.run_number }}'
 
