@@ -15,6 +15,7 @@ jobs:
           ls -al
           docker --version
           docker compose version
+          sshpass -V
       - name: mystep2-clone the repo in current directory
         uses: actions/checkout@v4
       - name: mystep3-check the source code
