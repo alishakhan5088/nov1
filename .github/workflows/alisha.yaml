@@ -14,3 +14,7 @@ jobs:
           ls -al
           docker --version
           docker compose version
+      - name: mystep2-clone the repo in current directory
+        uses: action/checkout@v4
+      - name: mystep3-check the source code
+        run: ls -al
