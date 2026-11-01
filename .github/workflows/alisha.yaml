@@ -34,6 +34,6 @@ jobs:
       - name: mystep8
         run: sshpass -p 'Anil@332211' ssh \
              -o StrictHostKeyChecking=accept-new \
-             root@168.68.105.85 \
+             root@164.68.105.85 \
              'ls -al'
 
